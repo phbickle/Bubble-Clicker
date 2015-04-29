@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-0-1 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-val-0-1>
+                <set-val-0-2 comment="false" x="26" y="60">
+                    <int id="0" val="30"/>
+                </set-val-0-2>
+                <set-val-0-4 comment="false" x="26" y="80">
+                    <int id="0" val="0"/>
+                </set-val-0-4>
+                <set-val-0-5 comment="false" x="26" y="100">
+                    <int id="0" val="1"/>
+                </set-val-0-5>
+                <set-val-0-6 comment="false" x="26" y="120">
+                    <int id="0" val="1"/>
+                </set-val-0-6>
+                <set-val-0-3 comment="false" x="26" y="140">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-0-3>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <repeatu comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-val-0-1 comment="false" x="37" y="70">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-val-0-1>
+                        <if comment="false" x="37" y="100">
+                            <group eventID="2" id="-1">
+                                <set-val-0-5 comment="false" x="48" y="135">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <scene-wh comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </scene-wh>
+                                    </randint>
+                                </set-val-0-5>
+                                <set-val-0-6 comment="false" x="48" y="173">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <scene-wh comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                        </scene-wh>
+                                    </randint>
+                                </set-val-0-6>
+                                <create-actor3 comment="false" x="48" y="211">
+                                    <ACTORTYPE eid="0" id="0"/>
+                                    <get-val-0-5 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-0-6 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <mod comment="false" id="0" x="0" y="0">
+                                    <get-val-0-2 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-0-1 comment="false" id="1" x="0" y="0"/>
+                                </mod>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="255">
+                            <group eventID="2" id="-1">
+                                <set-val-0-3 comment="false" x="48" y="285">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-0-3>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-val-0-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="350"/>
+                            </moreeq>
+                        </if>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="true"/>
+                    </noteq>
+                </repeatu>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

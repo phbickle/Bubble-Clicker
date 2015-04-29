@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Timer" hidden="false" id="1" name="_Timer" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Chance To Spawn" hidden="false" id="2" name="_ChanceToSpawn" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Game Running" hidden="false" id="3" name="_GameRunning" order="2"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Total Spawned" hidden="false" id="4" name="_TotalSpawned" order="3"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Spawn Point x" hidden="false" id="5" name="_SpawnPointx" order="4"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Spawn Point Y" hidden="false" id="6" name="_SpawnPointY" order="5"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_0" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
+    </snippet>
+</pack>
