@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scenes>
     <scene desc="" format="3.3.0" id="0" name="Main"/>
+    <scene desc="" format="3.3.0" id="1" name="Menu"/>
+    <scene desc="" format="3.3.0" id="2" name="Store Scene"/>
+    <scene desc="" format="3.3.0" id="3" name="But Rainbow Screen"/>
+    <scene desc="" format="3.3.0" id="4" name="Buy Bomb Screen"/>
+    <scene desc="" format="3.3.0" id="5" name="Buy Green Screen"/>
+    <scene desc="" format="3.3.0" id="6" name="Buy Blue Screen"/>
+    <scene desc="" format="3.3.0" id="7" name="Buy Purple Screen"/>
+    <scene desc="" format="3.3.0" id="8" name="Buy Gold Screen"/>
+    <scene desc="" format="3.3.0" id="9" name="Buy Invisible Screen"/>
+    <scene desc="" format="3.3.0" id="10" name="Buy Black Background"/>
+    <scene desc="" format="3.3.0" id="11" name="Buy Heart Background"/>
+    <scene desc="" format="3.3.0" id="12" name="Buy Star Background"/>
+    <scene desc="" format="3.3.0" id="13" name="Buy White Background"/>
 </scenes>

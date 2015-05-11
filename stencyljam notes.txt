@@ -1,0 +1,28 @@
+Bubbles
+-----
+Blue - 150
+Green - 150
+Purple - 150
+Gold - 600
+Rainbow - 600
+Invisible - 1000
+------
+Power Ups
+----
+Bomb - 90
+5 bubbles - 10
+10 bubbles - 15
+30 bubbles - 30
+----
+backgrounds
+-----
+Black Background - 2000
+Heart Background - 5000
+Star Background  - 5000
+White 			 - 0
+
+
+Known Bugs:
+First "self-destructed"" bubble (dies by going off screen) decreases saved up store points by 1
+Bubbles go back to default animation after 100 seconds
+Bubbles occasionally fail to use popping animation (might be rainbow bubble specific)

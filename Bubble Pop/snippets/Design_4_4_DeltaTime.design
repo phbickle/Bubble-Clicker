@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-4-1 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-val-4-1>
+                <set-val-4-2 comment="false" x="26" y="60">
+                    <int id="0" val="0"/>
+                </set-val-4-2>
+                <set-game-val-0 comment="false" x="26" y="80">
+                    <int id="0" val="0"/>
+                </set-game-val-0>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-4-1 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-4-1>
+                <if comment="false" x="26" y="70">
+                    <group eventID="2" id="-1">
+                        <set-game-val-0 comment="false" x="37" y="100">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-game-val-0>
+                        <set-val-4-1 comment="false" x="37" y="130">
+                            <int id="0" val="0"/>
+                        </set-val-4-1>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="60"/>
+                    </moreeq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

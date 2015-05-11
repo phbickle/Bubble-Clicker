@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-val-9-1 comment="false" x="37" y="70">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="18"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </scene-wh>
+                                    <int id="1" val="64"/>
+                                </minus>
+                            </randint>
+                        </set-val-9-1>
+                        <set-val-9-2 comment="false" x="37" y="113">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="18"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </scene-wh>
+                                    <int id="1" val="64"/>
+                                </minus>
+                            </randint>
+                        </set-val-9-2>
+                        <create-actor3 comment="false" x="37" y="156">
+                            <ACTORTYPE eid="0" id="0"/>
+                            <get-val-9-1 comment="false" id="1" x="0" y="0"/>
+                            <get-val-9-2 comment="false" id="2" x="0" y="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-game-val-2 comment="false" x="37" y="188">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-game-val-2>
+                        <set-val-9-3 comment="false" x="37" y="218">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-9-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-val-9-3>
+                        <set-val-9-4 comment="false" x="37" y="248">
+                            <int id="0" val="0"/>
+                        </set-val-9-4>
+                        <if comment="false" x="37" y="268">
+                            <group eventID="1" id="-1">
+                                <set-val-9-1 comment="false" x="48" y="298">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-1>
+                                <set-val-9-2 comment="false" x="48" y="341">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-2>
+                                <create-actor3 comment="false" x="48" y="384">
+                                    <ACTORTYPE eid="0" id="0"/>
+                                    <get-val-9-1 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-9-2 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <set-game-val-2 comment="false" x="48" y="416">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-game-val-2>
+                                <set-val-9-3 comment="false" x="48" y="446">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-9-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-val-9-3>
+                                <set-val-9-4 comment="false" x="48" y="476">
+                                    <int id="0" val="0"/>
+                                </set-val-9-4>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="60"/>
+                            </more>
+                        </if>
+                        <if comment="false" x="37" y="508">
+                            <group eventID="1" id="-1">
+                                <set-val-9-1 comment="false" x="48" y="538">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-1>
+                                <set-val-9-2 comment="false" x="48" y="581">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-2>
+                                <create-actor3 comment="false" x="48" y="624">
+                                    <ACTORTYPE eid="0" id="0"/>
+                                    <get-val-9-1 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-9-2 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <set-game-val-2 comment="false" x="48" y="656">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-game-val-2>
+                                <set-val-9-3 comment="false" x="48" y="686">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-9-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-val-9-3>
+                                <set-val-9-4 comment="false" x="48" y="716">
+                                    <int id="0" val="0"/>
+                                </set-val-9-4>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="80"/>
+                            </more>
+                        </if>
+                        <if comment="false" x="37" y="748">
+                            <group eventID="1" id="-1">
+                                <set-val-9-1 comment="false" x="48" y="778">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-1>
+                                <set-val-9-2 comment="false" x="48" y="821">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-2>
+                                <create-actor3 comment="false" x="48" y="864">
+                                    <ACTORTYPE eid="0" id="0"/>
+                                    <get-val-9-1 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-9-2 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <set-game-val-2 comment="false" x="48" y="896">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-game-val-2>
+                                <set-val-9-3 comment="false" x="48" y="926">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-9-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-val-9-3>
+                                <set-val-9-4 comment="false" x="48" y="956">
+                                    <int id="0" val="0"/>
+                                </set-val-9-4>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </more>
+                        </if>
+                        <if comment="false" x="37" y="988">
+                            <group eventID="1" id="-1">
+                                <set-val-9-1 comment="false" x="48" y="1018">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-1>
+                                <set-val-9-2 comment="false" x="48" y="1061">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="18"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <scene-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                            </scene-wh>
+                                            <int id="1" val="64"/>
+                                        </minus>
+                                    </randint>
+                                </set-val-9-2>
+                                <create-actor3 comment="false" x="48" y="1104">
+                                    <ACTORTYPE eid="0" id="0"/>
+                                    <get-val-9-1 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-9-2 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <set-game-val-2 comment="false" x="48" y="1136">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-game-val-2>
+                                <set-val-9-3 comment="false" x="48" y="1166">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-9-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-val-9-3>
+                                <set-val-9-4 comment="false" x="48" y="1196">
+                                    <int id="0" val="0"/>
+                                </set-val-9-4>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="120"/>
+                            </more>
+                        </if>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="40"/>
+                    </more>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

@@ -1,9 +1,206 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="false" fric="0.2" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bubble" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="34" fixedrot="false" fric="0.2" gid="3" id="34" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Background Label" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="35" static="true">
         <snippets/>
     </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="35" name="Background Label" shared="false" width="128">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="128">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="26" fixedrot="false" fric="0.2" gid="3" id="20" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Blue Bubble Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="16" fixedrot="false" fric="0.2" gid="3" id="10" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bomb" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="11" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="11" name="Bomb" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="3" id="12" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bomb Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="13" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="13" name="Bomb Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="3" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Bubble" oid="-1" pausable="true" physicsMode="0" rest="0.29" shared="false" sprite="1" static="false">
+        <snippets>
+            <s enabled="true" id="8">
+                <prop id="1" list="0" val="0.0"/>
+                <prop id="2" list="0" val="30.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="0.0"/>
+                <prop id="8" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="1" name="Bubble" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="false" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <circle data="32,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="100,100" height="63" id="1" loop="false" name="Animation 1" numframes="2" originx="31" originy="31" sync="false" version="2" width="126">
+            <poly data="4,0,0,63,0,63,63,0,63" density="0.1" fric="0.2" gid="4" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="2" loop="false" name="Rainbow" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <circle data="32,0,0" density="0.1" fric="0.2" gid="-1000" id="1" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="3" loop="true" name="Green" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <circle data="32,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="4" loop="true" name="Blue" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <circle data="32,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="5" loop="true" name="Purple" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <circle data="32,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="6" loop="true" name="Gold" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <circle data="32,0,0" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="64" id="7" loop="true" name="Invisible" numframes="1" originx="32" originy="32" sync="false" version="2" width="64"/>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="29" name="Buble lable" shared="false" width="128">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="128">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="28" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Buble lable" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="29" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="21" name="But Bubble Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="35" fixedrot="false" fric="0.2" gid="3" id="36" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Buy Black Background Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="37" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="37" name="Buy Black Background Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="17" name="Buy Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="3" id="16" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Buy Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="17" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="27" name="Gold Bubble Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="29" fixedrot="false" fric="0.2" gid="3" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Gold Bubble Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="25" name="Green Bubble Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="28" fixedrot="false" fric="0.2" gid="3" id="24" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Green Bubble Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="25" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="32" fixedrot="false" fric="0.2" gid="3" id="32" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Heart" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="33" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="33" name="Heart" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="37" fixedrot="false" fric="0.2" gid="3" id="38" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Heart Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="39" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="39" name="Heart Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="31" name="Power Ups Lable" shared="false" width="128">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="128">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="31" fixedrot="false" fric="0.2" gid="3" id="30" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Power Ups Lable" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="31" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="23" name="Purple Bubble Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="27" fixedrot="false" fric="0.2" gid="3" id="22" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Purple Bubble Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="23" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="14" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Rainbow Bubble Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="15" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="15" name="Rainbow Bubble Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="19" name="Return" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="25" fixedrot="false" fric="0.2" gid="3" id="18" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Return" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="19" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="38" fixedrot="false" fric="0.2" gid="3" id="40" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Star" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="41" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="41" name="Star" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="39" fixedrot="false" fric="0.2" gid="3" id="42" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Star Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="43" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="43" name="Star Button" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="false" fric="0.2" gid="3" id="2" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Start Game Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="3" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="108" id="3" name="Start Game Button" shared="false" width="216">
+        <anim across="1" down="1" durations="100" height="108" id="0" loop="false" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="216">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="108" id="5" name="Store" shared="false" width="210">
+        <anim across="1" down="1" durations="100" height="108" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="210">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="9" fixedrot="false" fric="0.2" gid="3" id="4" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Store Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="5" static="false">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="11" fixedrot="true" fric="0.2" gid="3" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Store Left Arrow" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="7" name="Store Left Arrow" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="12" fixedrot="true" fric="0.2" gid="3" id="8" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Store Right Arrow" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="9" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="9" name="Store Right Arrow" shared="false" width="64">
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
         </anim>
