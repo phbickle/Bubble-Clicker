@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-val-7-35 comment="false" id="0" x="0" y="0"/>
+                        <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                    </times>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="77">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-val-7-36 comment="false" id="0" x="0" y="0"/>
+                        <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                    </times>
+                </set-dxy>
+                <if comment="false" x="26" y="114">
+                    <group eventID="3" id="-1">
+                        <set-val-7-35 comment="false" x="37" y="139">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <CONTROL eid="var" id="1" vid="34"/>
+                                    </keystate>
+                                </as-number>
+                                <as-number comment="false" id="1" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <CONTROL eid="var" id="1" vid="33"/>
+                                    </keystate>
+                                </as-number>
+                            </minus>
+                        </set-val-7-35>
+                        <set-val-7-36 comment="false" x="37" y="182">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <CONTROL eid="var" id="1" vid="32"/>
+                                    </keystate>
+                                </as-number>
+                                <as-number comment="false" id="1" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <CONTROL eid="var" id="1" vid="31"/>
+                                    </keystate>
+                                </as-number>
+                            </minus>
+                        </set-val-7-36>
+                    </group>
+                    <get-val-7-40 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="237">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="37" y="277">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <div comment="false" id="2" x="0" y="0">
+                                <times comment="false" id="0" x="0" y="0">
+                                    <get-val-7-35 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                                </times>
+                                <get-val-7-38 comment="false" id="1" x="0" y="0"/>
+                            </div>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="319">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <div comment="false" id="2" x="0" y="0">
+                                <times comment="false" id="0" x="0" y="0">
+                                    <get-val-7-36 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                                </times>
+                                <get-val-7-38 comment="false" id="1" x="0" y="0"/>
+                            </div>
+                        </set-dxy>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-7-37 comment="false" id="0" x="0" y="0"/>
+                        <and comment="false" id="1" x="0" y="0">
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-7-35 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </noteq>
+                            <noteq comment="false" id="1" x="0" y="0">
+                                <get-val-7-36 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </noteq>
+                        </and>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="17">
+            <group eventID="4" id="-1">
+                <set-val-7-38 comment="false" x="26" y="42">
+                    <sqrt comment="false" id="0" x="0" y="0">
+                        <int id="0" val="2"/>
+                    </sqrt>
+                </set-val-7-38>
+                <set-val-7-35 comment="false" x="26" y="67">
+                    <int id="0" val="8"/>
+                </set-val-7-35>
+                <set-val-7-36 comment="false" x="26" y="87">
+                    <int id="0" val="8"/>
+                </set-val-7-36>
+                <set-val-7-11 comment="false" x="26" y="107">
+                    <int id="0" val="1"/>
+                </set-val-7-11>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

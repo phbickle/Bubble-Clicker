@@ -102,11 +102,11 @@ if(wrapper.enabled)
         g.fillColor = Utils.getColorRGB(0,0,0);
         g.strokeSize = Std.int(2);
         getLastCreatedActor().setAnimation("" + ("" + "Animation 0"));
-        g.drawRect(64, 16, (((getSceneWidth()) - ((getSceneWidth()) / 4)) - 10), ((getSceneHeight()) - ((getSceneHeight()) / 16)));
-        attachImageToHUD(new BitmapWrapper(new Bitmap(resizeImage(getImageForActor(getLastCreatedActor()), (200/100), (200/100), true))), Std.int((((getSceneWidth()) - ((getSceneWidth()) / 2)) - ((new BitmapWrapper(new Bitmap(getImageForActor(getLastCreatedActor()))).width/Engine.SCALE * 2) / 2))), Std.int(((getSceneHeight()) - (((getSceneHeight()) / 3) * 2))));
+        g.drawRect(64, 16, ((getSceneWidth()) - ((getSceneWidth()) / 4)), ((getSceneHeight()) - ((getSceneHeight()) / 16)));
+        attachImageToHUD(new BitmapWrapper(new Bitmap(getImageForActor(getLastCreatedActor()))), Std.int((((getSceneWidth()) - ((getSceneWidth()) / 2)) - (new BitmapWrapper(new Bitmap(getImageForActor(getLastCreatedActor()))).width/Engine.SCALE / 2))), Std.int(((getSceneHeight()) - (((getSceneHeight()) / 3) * 2))));
         g.fillColor = Utils.getColorRGB(0,0,0);
         g.strokeSize = Std.int(1);
-        g.drawString("" + "Cost: 5000", 300, 42);
+        g.drawString("" + "Test", 10, 10);
 }
 });
     
@@ -133,10 +133,10 @@ addMouseOverActorListener(getActor(4), function(mouseState:Int, list:Array<Dynam
 {
 if(wrapper.enabled && 3 == mouseState)
 {
-        if((Engine.engine.getGameAttribute("Store Points") >= 5))
+        if((Engine.engine.getGameAttribute("Store Points") >= 5000))
 {
             Engine.engine.setGameAttribute("Background Colout", "Heart");
-            Engine.engine.setGameAttribute("Store Points", (Engine.engine.getGameAttribute("Store Points") - 5));
+            Engine.engine.setGameAttribute("Store Points", (Engine.engine.getGameAttribute("Store Points") - 5000));
             saveGame("mySave", function(success:Bool):Void {
 
 });

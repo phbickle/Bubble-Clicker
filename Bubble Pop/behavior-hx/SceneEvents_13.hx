@@ -89,10 +89,10 @@ if(wrapper.enabled)
 {
         g.fillColor = Utils.getColorRGB(0,0,0);
         g.strokeSize = Std.int(2);
-        g.drawRect(64, 16, (((getSceneWidth()) - ((getSceneWidth()) / 4)) - 10), ((getSceneHeight()) - ((getSceneHeight()) / 16)));
+        g.drawRect(64, 16, ((getSceneWidth()) - ((getSceneWidth()) / 4)), ((getSceneHeight()) - ((getSceneHeight()) / 16)));
         g.fillColor = Utils.getColorRGB(0,0,0);
         g.strokeSize = Std.int(1);
-        g.drawString("" + "Cost: FREE!", 300, 42);
+        g.drawString("" + "Test", 10, 10);
 }
 });
     
@@ -115,9 +115,9 @@ if(wrapper.enabled && 3 == mouseState)
 });
     
 /* =========================== On Actor =========================== */
-addMouseOverActorListener(getActor(1), function(mouseState:Int, list:Array<Dynamic>):Void
+addMouseOverActorListener(getLastCreatedActor(), function(mouseState:Int, list:Array<Dynamic>):Void
 {
-if(wrapper.enabled && 3 == mouseState)
+if(wrapper.enabled && 1 == mouseState)
 {
         Engine.engine.setGameAttribute("Background Colout", "White");
         saveGame("mySave", function(success:Bool):Void {

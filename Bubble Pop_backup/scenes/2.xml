@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="10" extheight="704" extwidth="544" extx="-32" exty="-32" format="3.3.0" gravx="-0.0" gravy="0.0" height="640" id="2" name="Store Scene" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="480">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="12" name="Bomb Button 1" sx="1.0" sy="1.0" x="63" y="379" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="14" name="Rainbow Bubble Button 2" sx="1.0" sy="1.0" x="230" y="232" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="18" name="Return 3" sx="1.0" sy="1.0" x="43" y="33" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="20" name="Blue Bubble Button 4" sx="1.0" sy="1.0" x="119" y="114" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="24" name="Green Bubble Button 5" sx="1.0" sy="1.0" x="226" y="115" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="22" name="Purple Bubble Button 6" sx="1.0" sy="1.0" x="332" y="115" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="26" name="Gold Bubble Button 7" sx="1.0" sy="1.0" x="120" y="232" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="28" name="Buble lable 8" sx="1.0" sy="1.0" x="186" y="34" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="30" name="Power Ups Lable 9" sx="1.0" sy="1.0" x="187" y="316" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="34" name="Background Label 10" sx="1.0" sy="1.0" x="181" y="440" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="36" name="Buy Black Background Button 11" sx="1.0" sy="1.0" x="114" y="507" z="0"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="38" name="Heart Button 12" sx="1.0" sy="1.0" x="213" y="509" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="42" name="Star Button 13" sx="1.0" sy="1.0" x="314" y="509" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+    <atlases members="0,1,2,3," retainAtlases="false"/>
+</scene>
