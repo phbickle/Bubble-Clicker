@@ -108,15 +108,15 @@
     <props/>
     <attributes>
         <text cid="-1" id="12" name="Background Colout" save="true" value="White"/>
-        <number cid="-1" id="0" name="Time" save="true" value="0.0"/>
         <number cid="-1" id="5" name="Default Bubble Width" save="true" value="0.0"/>
+        <number cid="-1" id="0" name="Time" save="true" value="0.0"/>
         <number cid="-1" id="2" name="Bubbles on Screen" save="true" value="0.0"/>
         <number cid="-1" id="6" name="Chance to Spawn" save="true" value="0.0"/>
-        <number cid="-1" id="1" name="Best Time" save="true" value="0.0"/>
         <text cid="-1" id="10" name="Bubble Type" save="true" value="Animation 0"/>
+        <number cid="-1" id="1" name="Best Time" save="true" value="0.0"/>
         <number cid="0" id="8" name="Number of Bombs" save="true" value="0.0"/>
-        <number cid="-1" id="3" name="High Score" save="true" value="0.0"/>
         <number cid="-1" id="4" name="Score" save="true" value="0.0"/>
+        <number cid="-1" id="3" name="High Score" save="true" value="0.0"/>
         <bool cid="-1" id="11" name="Bought" save="true" value="false"/>
         <number cid="-1" id="7" name="Store Points" save="true" value="0.0"/>
     </attributes>

@@ -69,11 +69,9 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_3 extends SceneScript
+class SceneEvents_6 extends SceneScript
 {
 	
-public var _RainbowBubblePage:Bool;
-
 public var _SpawnPointx:Float;
 
 public var _SpawnPointY:Float;
@@ -82,9 +80,7 @@ public var _SpawnPointY:Float;
  	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("Rainbow Bubble Page", "_RainbowBubblePage");
-_RainbowBubblePage = false;
-nameMap.set("Spawn Point x", "_SpawnPointx");
+		nameMap.set("Spawn Point x", "_SpawnPointx");
 _SpawnPointx = 0.0;
 nameMap.set("Spawn Point Y", "_SpawnPointY");
 _SpawnPointY = 0.0;
@@ -105,12 +101,12 @@ if(wrapper.enabled)
 {
         g.fillColor = Utils.getColorRGB(0,0,0);
         g.strokeSize = Std.int(2);
-        getLastCreatedActor().setAnimation("" + ("" + "Rainbow"));
+        getLastCreatedActor().setAnimation("" + ("" + "Blue"));
         g.drawRect(64, 16, (((getSceneWidth()) - ((getSceneWidth()) / 4)) - 10), ((getSceneHeight()) - ((getSceneHeight()) / 16)));
         attachImageToHUD(new BitmapWrapper(new Bitmap(resizeImage(getImageForActor(getLastCreatedActor()), (200/100), (200/100), true))), Std.int((((getSceneWidth()) - ((getSceneWidth()) / 2)) - ((new BitmapWrapper(new Bitmap(getImageForActor(getLastCreatedActor()))).width/Engine.SCALE * 2) / 2))), Std.int(((getSceneHeight()) - (((getSceneHeight()) / 3) * 2))));
         g.fillColor = Utils.getColorRGB(0,0,0);
         g.strokeSize = Std.int(1);
-        g.drawString("" + "Cost: 600", 300, 42);
+        g.drawString("" + "Cost: 150", 300, 42);
 }
 });
     
@@ -119,7 +115,7 @@ addMouseOverActorListener(getActor(2), function(mouseState:Int, list:Array<Dynam
 {
 if(wrapper.enabled && 3 == mouseState)
 {
-        switchScene(GameModel.get().scenes.get(9).getID(), createFadeOut(0, Utils.getColorRGB(0,0,0)), createFadeIn(0, Utils.getColorRGB(0,0,0)));
+        switchScene(GameModel.get().scenes.get(5).getID(), createFadeOut(0, Utils.getColorRGB(0,0,0)), createFadeIn(0, Utils.getColorRGB(0,0,0)));
 }
 });
     
@@ -128,7 +124,7 @@ addMouseOverActorListener(getActor(1), function(mouseState:Int, list:Array<Dynam
 {
 if(wrapper.enabled && 3 == mouseState)
 {
-        switchScene(GameModel.get().scenes.get(8).getID(), createFadeOut(0, Utils.getColorRGB(0,0,0)), createFadeIn(0, Utils.getColorRGB(0,0,0)));
+        switchScene(GameModel.get().scenes.get(13).getID(), createFadeOut(0, Utils.getColorRGB(0,0,0)), createFadeIn(0, Utils.getColorRGB(0,0,0)));
 }
 });
     
@@ -137,10 +133,10 @@ addMouseOverActorListener(getActor(3), function(mouseState:Int, list:Array<Dynam
 {
 if(wrapper.enabled && 3 == mouseState)
 {
-        if((Engine.engine.getGameAttribute("Store Points") >= 600))
+        if((Engine.engine.getGameAttribute("Store Points") >= 150))
 {
-            Engine.engine.setGameAttribute("Bubble Type", "Rainbow");
-            Engine.engine.setGameAttribute("Store Points", (Engine.engine.getGameAttribute("Store Points") - 600));
+            Engine.engine.setGameAttribute("Bubble Type", "Blue");
+            Engine.engine.setGameAttribute("Store Points", (Engine.engine.getGameAttribute("Store Points") - 150));
             saveGame("mySave", function(success:Bool):Void {
 
 });
