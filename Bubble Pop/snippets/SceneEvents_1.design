@@ -77,7 +77,13 @@
     <group eventID="3" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <load-game comment="false" x="26" y="40">
+                <set-game-val-7 comment="false" x="26" y="40">
+                    <int id="0" val="500000"/>
+                </set-game-val-7>
+                <save-game comment="false" x="26" y="60">
+                    <group eventID="3" id="-1"/>
+                </save-game>
+                <load-game comment="false" x="26" y="117">
                     <group eventID="3" id="-1"/>
                 </load-game>
             </group>

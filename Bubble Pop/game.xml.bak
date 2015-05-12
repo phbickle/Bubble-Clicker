@@ -48,13 +48,20 @@
     <folders>
         <group desc="" id="0" name="Store Screens" type="snippet"/>
         <group desc="" id="1" name="Store Buttons" type="actor">
+            <r id="38"/>
+            <r id="36"/>
+            <r id="6"/>
+            <r id="42"/>
+            <r id="8"/>
+            <r id="12"/>
+            <r id="14"/>
+            <r id="16"/>
+            <r id="18"/>
             <r id="20"/>
             <r id="22"/>
             <r id="24"/>
             <r id="26"/>
-            <r id="12"/>
             <r id="28"/>
-            <r id="14"/>
             <r id="30"/>
         </group>
         <group desc="" id="2" name="Store Scenes" type="scene">
@@ -70,6 +77,10 @@
             <r id="11"/>
             <r id="12"/>
             <r id="13"/>
+        </group>
+        <group desc="" id="3" name="Background Tiles" type="actor">
+            <r id="32"/>
+            <r id="40"/>
         </group>
     </folders>
     <packs/>
@@ -97,15 +108,15 @@
     <props/>
     <attributes>
         <text cid="-1" id="12" name="Background Colout" save="true" value="White"/>
-        <number cid="-1" id="5" name="Default Bubble Width" save="true" value="0.0"/>
         <number cid="-1" id="0" name="Time" save="true" value="0.0"/>
+        <number cid="-1" id="5" name="Default Bubble Width" save="true" value="0.0"/>
         <number cid="-1" id="2" name="Bubbles on Screen" save="true" value="0.0"/>
         <number cid="-1" id="6" name="Chance to Spawn" save="true" value="0.0"/>
-        <text cid="-1" id="10" name="Bubble Type" save="true" value="Animation 0"/>
         <number cid="-1" id="1" name="Best Time" save="true" value="0.0"/>
+        <text cid="-1" id="10" name="Bubble Type" save="true" value="Animation 0"/>
         <number cid="0" id="8" name="Number of Bombs" save="true" value="0.0"/>
-        <number cid="-1" id="4" name="Score" save="true" value="0.0"/>
         <number cid="-1" id="3" name="High Score" save="true" value="0.0"/>
+        <number cid="-1" id="4" name="Score" save="true" value="0.0"/>
         <bool cid="-1" id="11" name="Bought" save="true" value="false"/>
         <number cid="-1" id="7" name="Store Points" save="true" value="0.0"/>
     </attributes>
@@ -137,7 +148,7 @@
         <poly id="24" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,34,32,38,36,42,40," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,34,32,38,36,42,40,44,45," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

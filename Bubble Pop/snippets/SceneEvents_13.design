@@ -14,15 +14,18 @@
                     <int id="1" val="64"/>
                     <int id="2" val="16"/>
                     <minus comment="false" id="3" x="0" y="0">
-                        <scene-wh comment="false" id="0" x="0" y="0">
-                            <int id="0" val="0"/>
-                        </scene-wh>
-                        <div comment="false" id="1" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
                             <scene-wh comment="false" id="0" x="0" y="0">
                                 <int id="0" val="0"/>
                             </scene-wh>
-                            <int id="1" val="4"/>
-                        </div>
+                            <div comment="false" id="1" x="0" y="0">
+                                <scene-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </scene-wh>
+                                <int id="1" val="4"/>
+                            </div>
+                        </minus>
+                        <int id="1" val="10"/>
                     </minus>
                     <minus comment="false" id="4" x="0" y="0">
                         <scene-wh comment="false" id="0" x="0" y="0">
@@ -36,16 +39,16 @@
                         </div>
                     </minus>
                 </drawfill-rect>
-                <set-color comment="false" x="26" y="137">
+                <set-color comment="false" x="26" y="142">
                     <color b="0" g="0" id="0" r="0"/>
                 </set-color>
-                <set-thickness comment="false" x="26" y="164">
+                <set-thickness comment="false" x="26" y="169">
                     <int id="0" val="1"/>
                 </set-thickness>
-                <draw-text comment="false" x="26" y="184">
-                    <int id="0" val="Test"/>
-                    <int id="1" val="10"/>
-                    <int id="2" val="10"/>
+                <draw-text comment="false" x="26" y="189">
+                    <int id="0" val="Cost: FREE!"/>
+                    <int id="1" val="300"/>
+                    <int id="2" val="42"/>
                 </draw-text>
             </group>
         </draw>
@@ -97,8 +100,8 @@
                     <group eventID="4" id="-1"/>
                 </save-game>
             </group>
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="0"/>
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="2"/>
         </event-mouse-enter-exit-actor>
     </group>
     <group eventID="4" id="-1"/>

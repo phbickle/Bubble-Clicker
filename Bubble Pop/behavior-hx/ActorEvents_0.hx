@@ -77,6 +77,8 @@ public var _Lifespan:Float;
 
 public var _BubbleTimer:Float;
 
+public var _Soundtoplay:Float;
+
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
@@ -87,6 +89,8 @@ nameMap.set("Lifespan", "_Lifespan");
 _Lifespan = 0.0;
 nameMap.set("Bubble Timer", "_BubbleTimer");
 _BubbleTimer = 0.0;
+nameMap.set("Sound to play", "_Soundtoplay");
+_Soundtoplay = 0.0;
 
 	}
 	
@@ -149,6 +153,18 @@ if(wrapper.enabled && 3 == mouseState)
 {
             Engine.engine.setGameAttribute("Bubbles on Screen", (Engine.engine.getGameAttribute("Bubbles on Screen") - 1));
             Engine.engine.setGameAttribute("Score", (Engine.engine.getGameAttribute("Score") + 1));
+            _Soundtoplay = asNumber(randomInt(Math.floor(0), Math.floor(1)));
+propertyChanged("_Soundtoplay", _Soundtoplay);
+            if((_Soundtoplay == 0))
+{
+                playSound(getSound(44));
+}
+
+            else
+{
+                playSound(getSound(45));
+}
+
             actor.setAnimation("" + ("" + "Animation 1"));
             actor.setXVelocity(0);
             actor.setYVelocity(0);

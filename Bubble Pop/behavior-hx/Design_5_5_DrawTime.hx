@@ -82,6 +82,11 @@ class Design_5_5_DrawTime extends SceneScript
 	override public function init()
 	{
 		    
+/* ======================== When Creating ========================= */
+        createRecycledActor(getActorType(10), 0, 0, Script.BACK);
+        recycleActor(getLastCreatedActor());
+        attachImageToHUD(new BitmapWrapper(new Bitmap(getImageForActor(getLastCreatedActor()))), Std.int(208), Std.int(1));
+    
 /* ========================= When Drawing ========================= */
 addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 {
@@ -96,6 +101,8 @@ if(wrapper.enabled)
         g.drawString("" + Engine.engine.getGameAttribute("High Score"), 124, 18);
         g.drawString("" + "Score:", 310, 18);
         g.drawString("" + Engine.engine.getGameAttribute("Score"), 424, 18);
+        g.drawString("" + "x", 264, 24);
+        g.drawString("" + Engine.engine.getGameAttribute("Number of Bombs"), 278, 22);
 }
 });
 
