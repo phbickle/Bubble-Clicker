@@ -110,6 +110,8 @@ public var _TilingCounterY:Float;
 
 public var _NumberofTiles:Float;
 
+public var _Soundtoplay:Float;
+
 public var _NumberofTilesY:Float;
 
  
@@ -143,16 +145,18 @@ _Dead = false;
 nameMap.set("test background bool", "_testbackgroundbool");
 _testbackgroundbool = false;
 nameMap.set("Tiling Counter", "_TilingCounter");
-_TilingCounter = 0;
+_TilingCounter = 0.0;
 nameMap.set("Background has been drawn", "_Backgroundhasbeendrawn");
 _Backgroundhasbeendrawn = false;
 nameMap.set("Background Has Been Drawn", "_BackgroundHasBeenDrawn");
 nameMap.set("Tiling Counter Y", "_TilingCounterY");
-_TilingCounterY = 0;
+_TilingCounterY = 0.0;
 nameMap.set("Number of Tiles", "_NumberofTiles");
-_NumberofTiles = 0;
+_NumberofTiles = 0.0;
+nameMap.set("Sound to play", "_Soundtoplay");
+_Soundtoplay = 0.0;
 nameMap.set("Number of Tiles Y", "_NumberofTilesY");
-_NumberofTilesY = 0;
+_NumberofTilesY = 0.0;
 
 	}
 	
@@ -160,37 +164,6 @@ _NumberofTilesY = 0;
 	{
 		    
 /* ======================== When Creating ========================= */
-        _Time = asNumber(0);
-propertyChanged("_Time", _Time);
-        Engine.engine.setGameAttribute("Time", 0);
-        _ChanceToSpawn = asNumber(2);
-propertyChanged("_ChanceToSpawn", _ChanceToSpawn);
-        _TotalSpawned = asNumber(0);
-propertyChanged("_TotalSpawned", _TotalSpawned);
-        _SpawnPointx = asNumber(1);
-propertyChanged("_SpawnPointx", _SpawnPointx);
-        _SpawnPointY = asNumber(1);
-propertyChanged("_SpawnPointY", _SpawnPointY);
-        Engine.engine.setGameAttribute("Bubbles on Screen", 0);
-        Engine.engine.setGameAttribute("Score", 0);
-        _TimeSinceLastSpawn = asNumber(0);
-propertyChanged("_TimeSinceLastSpawn", _TimeSinceLastSpawn);
-        loadGame("mySave", function(success:Bool):Void {
-
-});
-        createRecycledActor(getActorType(0), _SpawnPointx, _SpawnPointY, Script.FRONT);
-        getLastCreatedActor().setAnimation("" + ("" + Engine.engine.getGameAttribute("Bubble Type")));
-        recycleActor(getLastCreatedActor());
-        _TilingCounter = asNumber(0);
-propertyChanged("_TilingCounter", _TilingCounter);
-        _TilingCounterY = asNumber(0);
-propertyChanged("_TilingCounterY", _TilingCounterY);
-        _NumberofTiles = asNumber(-1);
-propertyChanged("_NumberofTiles", _NumberofTiles);
-        _NumberofTilesY = asNumber(-1);
-propertyChanged("_NumberofTilesY", _NumberofTilesY);
-        _GameRunning = true;
-propertyChanged("_GameRunning", _GameRunning);
         if((Engine.engine.getGameAttribute("Background Colout") == "Black"))
 {
             setColorBackground(Utils.getColorRGB(51,51,51));
@@ -228,9 +201,9 @@ propertyChanged("_TilingCounterY", _TilingCounterY);
 propertyChanged("_NumberofTilesY", _NumberofTilesY);
 }
 
-        else if((Engine.engine.getGameAttribute("Background Colout") == "Heart"))
+        else if((Engine.engine.getGameAttribute("Background Colout") == "Star"))
 {
-            createRecycledActor(getActorType(32), 0, 0, Script.BACK);
+            createRecycledActor(getActorType(40), 0, 0, Script.BACK);
             recycleActor(getLastCreatedActor());
             while(!((_TilingCounterY >= (getSceneHeight()))))
 {
@@ -238,14 +211,14 @@ propertyChanged("_NumberofTilesY", _NumberofTilesY);
 propertyChanged("_TilingCounterY", _TilingCounterY);
                 _NumberofTilesY = asNumber((_NumberofTilesY + 1));
 propertyChanged("_NumberofTilesY", _NumberofTilesY);
-                createRecycledActor(getActorType(32), ((getLastCreatedActor().getWidth()) * _NumberofTiles), ((getLastCreatedActor().getHeight()) * _NumberofTilesY), Script.BACK);
+                createRecycledActor(getActorType(40), ((getLastCreatedActor().getWidth()) * _NumberofTiles), ((getLastCreatedActor().getHeight()) * _NumberofTilesY), Script.BACK);
                 while(!((_TilingCounter >= (getSceneWidth()))))
 {
                     _TilingCounter = asNumber((_TilingCounter + (getLastCreatedActor().getWidth())));
 propertyChanged("_TilingCounter", _TilingCounter);
                     _NumberofTiles = asNumber((_NumberofTiles + 1));
 propertyChanged("_NumberofTiles", _NumberofTiles);
-                    createRecycledActor(getActorType(32), ((getLastCreatedActor().getWidth()) * _NumberofTiles), ((getLastCreatedActor().getHeight()) * _NumberofTilesY), Script.BACK);
+                    createRecycledActor(getActorType(40), ((getLastCreatedActor().getWidth()) * _NumberofTiles), ((getLastCreatedActor().getHeight()) * _NumberofTilesY), Script.BACK);
 }
 
                 _TilingCounter = asNumber(0);
@@ -260,11 +233,42 @@ propertyChanged("_TilingCounterY", _TilingCounterY);
 propertyChanged("_NumberofTilesY", _NumberofTilesY);
 }
 
-        else
+        else if((Engine.engine.getGameAttribute("Background Colout") == "White"))
 {
             setColorBackground(Utils.getColorRGB(255,255,255));
 }
 
+        _Time = asNumber(0);
+propertyChanged("_Time", _Time);
+        Engine.engine.setGameAttribute("Time", 0);
+        _ChanceToSpawn = asNumber(2);
+propertyChanged("_ChanceToSpawn", _ChanceToSpawn);
+        _TotalSpawned = asNumber(0);
+propertyChanged("_TotalSpawned", _TotalSpawned);
+        _SpawnPointx = asNumber(1);
+propertyChanged("_SpawnPointx", _SpawnPointx);
+        _SpawnPointY = asNumber(1);
+propertyChanged("_SpawnPointY", _SpawnPointY);
+        Engine.engine.setGameAttribute("Bubbles on Screen", 0);
+        Engine.engine.setGameAttribute("Score", 0);
+        _TimeSinceLastSpawn = asNumber(0);
+propertyChanged("_TimeSinceLastSpawn", _TimeSinceLastSpawn);
+        loadGame("mySave", function(success:Bool):Void {
+
+});
+        createRecycledActor(getActorType(0), _SpawnPointx, _SpawnPointY, Script.FRONT);
+        getLastCreatedActor().setAnimation("" + ("" + Engine.engine.getGameAttribute("Bubble Type")));
+        recycleActor(getLastCreatedActor());
+        _TilingCounter = asNumber(0);
+propertyChanged("_TilingCounter", _TilingCounter);
+        _TilingCounterY = asNumber(0);
+propertyChanged("_TilingCounterY", _TilingCounterY);
+        _NumberofTiles = asNumber(-1);
+propertyChanged("_NumberofTiles", _NumberofTiles);
+        _NumberofTilesY = asNumber(-1);
+propertyChanged("_NumberofTilesY", _NumberofTilesY);
+        _GameRunning = true;
+propertyChanged("_GameRunning", _GameRunning);
     
 /* ======================== When Updating ========================= */
 addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
@@ -407,7 +411,6 @@ addWhenTypeGroupKilledListener(getActorType(0), function(eventActor:Actor, list:
 {
 if(wrapper.enabled)
 {
-        trace("" + Engine.engine.getGameAttribute("Store Points"));
         Engine.engine.setGameAttribute("Store Points", (Engine.engine.getGameAttribute("Store Points") + 1));
         if((Engine.engine.getGameAttribute("High Score") < Engine.engine.getGameAttribute("Score")))
 {

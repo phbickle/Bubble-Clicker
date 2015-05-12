@@ -83,6 +83,10 @@ class SceneEvents_1 extends SceneScript
 	{
 		    
 /* ======================== When Creating ========================= */
+        Engine.engine.setGameAttribute("Store Points", 500000);
+        saveGame("mySave", function(success:Bool):Void {
+
+});
         loadGame("mySave", function(success:Bool):Void {
 
 });

@@ -36,15 +36,18 @@
                     <int id="1" val="64"/>
                     <int id="2" val="16"/>
                     <minus comment="false" id="3" x="0" y="0">
-                        <scene-wh comment="false" id="0" x="0" y="0">
-                            <int id="0" val="0"/>
-                        </scene-wh>
-                        <div comment="false" id="1" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
                             <scene-wh comment="false" id="0" x="0" y="0">
                                 <int id="0" val="0"/>
                             </scene-wh>
-                            <int id="1" val="4"/>
-                        </div>
+                            <div comment="false" id="1" x="0" y="0">
+                                <scene-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </scene-wh>
+                                <int id="1" val="4"/>
+                            </div>
+                        </minus>
+                        <int id="1" val="10"/>
                     </minus>
                     <minus comment="false" id="4" x="0" y="0">
                         <scene-wh comment="false" id="0" x="0" y="0">
@@ -58,11 +61,16 @@
                         </div>
                     </minus>
                 </drawfill-rect>
-                <image-inst-hud comment="false" x="26" y="169">
+                <image-inst-hud comment="false" x="26" y="174">
                     <image-inst-create comment="false" id="0" x="0" y="0">
-                        <image-actor comment="false" id="0" x="0" y="0">
-                            <ACTOR eid="lastcreated" id="0"/>
-                        </image-actor>
+                        <image-resize comment="false" id="0" x="0" y="0">
+                            <image-actor comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </image-actor>
+                            <int id="1" val="200"/>
+                            <int id="2" val="200"/>
+                            <int id="3" val="0"/>
+                        </image-resize>
                     </image-inst-create>
                     <minus comment="false" id="1" x="0" y="0">
                         <minus comment="false" id="0" x="0" y="0">
@@ -77,14 +85,17 @@
                             </div>
                         </minus>
                         <div comment="false" id="1" x="0" y="0">
-                            <image-get-props comment="false" id="0" x="0" y="0">
-                                <image-inst-create comment="false" id="0" x="0" y="0">
-                                    <image-actor comment="false" id="0" x="0" y="0">
-                                        <ACTOR eid="lastcreated" id="0"/>
-                                    </image-actor>
-                                </image-inst-create>
-                                <int id="1" val="3"/>
-                            </image-get-props>
+                            <times comment="false" id="0" x="0" y="0">
+                                <image-get-props comment="false" id="0" x="0" y="0">
+                                    <image-inst-create comment="false" id="0" x="0" y="0">
+                                        <image-actor comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                        </image-actor>
+                                    </image-inst-create>
+                                    <int id="1" val="3"/>
+                                </image-get-props>
+                                <int id="1" val="2"/>
+                            </times>
                             <int id="1" val="2"/>
                         </div>
                     </minus>
@@ -103,28 +114,16 @@
                         </times>
                     </minus>
                 </image-inst-hud>
-                <set-color comment="false" x="26" y="230">
+                <set-color comment="false" x="26" y="240">
                     <color b="0" g="0" id="0" r="0"/>
                 </set-color>
-                <set-thickness comment="false" x="26" y="257">
+                <set-thickness comment="false" x="26" y="267">
                     <int id="0" val="1"/>
                 </set-thickness>
-                <draw-text comment="false" x="26" y="277">
-                    <int id="0" val="Bubbles may start blue, "/>
-                    <screen-xy comment="false" id="1" x="0" y="0">
-                        <int id="0" val="2"/>
-                    </screen-xy>
-                    <int id="2" val="400"/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="310">
-                    <int id="0" val="but you need something more vibrant!"/>
-                    <int id="1" val="10"/>
-                    <int id="2" val="10"/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="330">
-                    <int id="0" val="Buy the Blue Bubbles to have a deeper hue!"/>
-                    <int id="1" val="10"/>
-                    <int id="2" val="10"/>
+                <draw-text comment="false" x="26" y="287">
+                    <int id="0" val="Cost: 150"/>
+                    <int id="1" val="300"/>
+                    <int id="2" val="42"/>
                 </draw-text>
             </group>
         </draw>

@@ -8,10 +8,10 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="18" name="Return 1" sx="1.0" sy="1.0" x="0" y="19" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="6" name="Store Left Arrow 2" sx="1.0" sy="1.0" x="415" y="281" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="8" name="Store Right Arrow 3" sx="1.0" sy="1.0" x="0" y="281" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="16" name="Buy Button 4" sx="1.0" sy="1.0" x="209" y="426" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="3" id="18" name="Return 1" sx="1.0" sy="1.0" x="60" y="52" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="6" name="Store Left Arrow 2" sx="1.0" sy="1.0" x="394" y="303" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="8" name="Store Right Arrow 3" sx="1.0" sy="1.0" x="21" y="306" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="16" name="Buy Button 4" sx="1.0" sy="1.0" x="209" y="429" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
